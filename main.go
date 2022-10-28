@@ -32,7 +32,7 @@ func calculateHandler(w http.ResponseWriter, req *http.Request) {
 func main() {
 	http.HandleFunc("/calculate", calculateHandler)
 
-	err := http.ListenAndServe(":8081", nil)
+	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		panic(err)
 	}
